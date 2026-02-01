@@ -1,0 +1,122 @@
+/* 1. Global Page Settings */
+body {
+    background-color: rgb(0, 6, 37);
+    font-family: sans-serif;
+    margin: 0;
+    
+    /* Center content vertically on the screen */
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+}
+
+/* 2. The Main Container (Holds everything) */
+.hero {
+    display: flex;
+    flex-direction: column; /* Stack items top to bottom */
+    align-items: flex-start; /* Align everything to the left */
+    
+    /* Position the group */
+    margin-left: 15%; 
+    
+    /* Space between the Title, Button, and Password sections */
+    gap: 40px; 
+}
+
+/* 3. Text Styling */
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Keeps the text lines close together */
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px; /* Adjust size as needed */
+    line-height: 1.1;
+}
+
+.first-line {
+    color: aliceblue;
+}
+
+.second-line {
+    color: #10B981; /* Bright Green */
+}
+
+p {
+    font-size: 20px;
+    color: aliceblue;
+    margin-top: 10px; /* Small space above the paragraph */
+    margin-bottom: 0;
+}
+
+/* 4. Button Styling & Animation */
+button {
+    background-color: #10B981;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* Setup for the animation */
+    transition: all 0.1s;
+    
+    /* 3D Shadow Effect (Darker Green) */
+    box-shadow: 0px 6px 0px rgb(13, 148, 103);
+}
+
+button:hover {
+    /* Slight brightness increase on hover */
+    background-color: #15c98d;
+}
+
+button:active {
+    /* The "Squeeze" Effect */
+    transform: scale(0.95);      
+    
+    /* Reduce shadow to make it look pressed */
+    box-shadow: 0px 2px 0px rgb(13, 148, 103); 
+}
+
+/* 5. Password Box Layout */
+.generated-pass {
+    display: flex;
+    flex-direction: row;
+    
+    /* Takes up 30% of the screen width */
+    width: 60vw; 
+    
+    /* Space between the two boxes */
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.password-box {
+    /* Share the available width equally */
+    flex: 1; 
+    
+    /* Box appearance */
+    background-color: #273549;
+    height: 50px;
+    border-radius: 5px;
+    
+    /* Center the text inside the box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Optional: Add a bottom border for style */
+    border-bottom: 2px solid #10B981;
+}
+
+.paragraph {
+    color: #55F991; /* Light green text */
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}

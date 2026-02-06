@@ -1,0 +1,99 @@
+/* 1. Body still takes 100% of the screen to act as the background */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the 80% box horizontally */
+    align-items: center;     /* Centers the 80% box vertically */
+    min-height: 100vh;
+    background-color: #F4F4F4;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. The App Container - now set to 80% of the web page */
+.main-app {
+    width: 80%;              /* TAKES 80% OF THE SCREEN WIDTH */
+    max-width: 1000px;       /* Optional: stops it from getting too wide on huge monitors */
+    background-color: #FFFFFF;
+    
+    /* THE CURVE: Apply radius here */
+    border-radius: 20px;     
+    
+    /* THIS PROTECTS THE CURVE: 
+       It forces the purple hero section to stay inside the rounded corners */
+    overflow: hidden;        
+    
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. The Hero Section (The Purple Top) */
+.hero-section {
+    background-color: #4b1ffa;
+    padding: 60px 20px;      /* Increased padding to match the bigger size */
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* 4. The Bottom Section (The Gray/White part) */
+.bottom-section {
+    padding: 40px;           /* More padding for the bigger size */
+    display: flex;
+    flex-direction: column;   
+    gap: 30px;
+}
+
+/* The Cards inside the bottom section */
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+input {
+    background: transparent;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    width: 120px;
+    height: 80px;
+    color: white;
+    font-size: 58px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+}
+
+button {
+    background-color: #FFFFFF;
+    color: #3D3D3D;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.card {
+    border: 1px solid #E5E5E5; /* Subtle border for the cards */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #5A537B;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+.card p {
+    color: #353535;
+    font-size: 14px;
+    margin: 0;
+}
